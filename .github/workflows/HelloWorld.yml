@@ -1,0 +1,13 @@
+name: Triggered automatically by test-ping repo
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    name: Step to wordily hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Hello World'
+        run: |
+          echo "Hello World"
+          exit 0
